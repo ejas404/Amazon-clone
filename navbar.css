@@ -1,0 +1,357 @@
+/*--------------------------------------------top-section-----------------------------------------------------*/
+@font-face {
+    font-family: "Amazon ember";
+    src: url(fonts/Amazon_Typefaces_Complete_Font_Set_Mar2020/Ember/Amazon-Ember-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Amazon ember thin";
+    src: url(fonts/Amazon_Typefaces_Complete_Font_Set_Mar2020/Ember/AmazonEmber_Th.ttf);
+}
+@font-face {
+    font-family:"Amazon ember light" ;
+    src: url(fonts/Amazon_Typefaces_Complete_Font_Set_Mar2020/Ember/AmazonEmber_Lt.ttf);
+}
+
+
+:root {
+    --amazon-nav-black: #00050D;
+    font-family: "Amazon ember";
+}
+
+body {
+  
+    background-color: var(--amazon-nav-black);
+    margin: 0;
+    padding-top: 50px;
+ 
+
+}
+
+nav {
+    width: 715px;
+    height: 38px;
+    background-color: var(--amazon-nav-black);
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #aaa;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 2px rgba(0, 5, 13, .5);
+    z-index: 100;
+
+}
+
+nav .nav-logo img {
+    height: 18px;
+    margin-top: 5px;
+}
+
+.nav-logo {
+    flex: 1;
+    padding-left: 15px;
+}
+
+.nav-lists {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-lists-1,
+.nav-lists-2,
+.nav-lists-3{
+    display: flex;
+    cursor: pointer;
+    height: 38px;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+
+    &:hover {
+        color: white;
+        background-color:#aaaaaa2e;
+    }
+
+}
+.nav-lists-1:hover .home-i,
+.nav-lists-2:hover .store-i,
+.nav-lists-3:hover .categories-i{
+    transform: rotate(180deg);
+}
+.home-i,
+.store-i,
+.categories-i{
+    transition: .25s;
+    transition-property: inherit;
+}
+
+.nav-lists  i{
+    font-size: 9px;
+    margin: 5px 5px 7px 5px;
+    padding: 0;
+}
+
+
+.nav-icons {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 20px;
+
+}
+.nav-lists-1:hover .home-lists{
+    visibility: visible;
+    opacity: 100%;
+}
+.home-lists{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s;
+    box-shadow: -1px 1px 5px black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.li-bottom{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.home-lists ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.home-lists li{
+    padding: 6px 7px;
+    color: #aaa;
+    background-color: var(--amazon-nav-black);
+   
+    &:hover{
+        color: black;
+        background-color: #fff;
+    }
+}
+.nav-lists-2:hover .store-lists{
+    visibility: visible;
+    opacity: 100%;
+}
+.store-lists{
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: var(--amazon-nav-black);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: -1px 1px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s;
+ 
+    
+}
+.store-lists ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.store-lists li{
+    padding: 5px;
+    color: #aaa;
+    &:hover{
+        color: black;
+        background-color: #fff;
+    }
+    
+}
+.nav-lists-3:hover .categories-list{
+    visibility: visible;
+    opacity: 100%;
+
+}
+.categories-list{
+    position: absolute;
+    top: 90%;
+    right:-293px;
+    background-color: var(--amazon-nav-black);
+    width: 694px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -1px 1px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s;
+    transition-timing-function: ease;
+    
+}
+.categories-list .headings{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 70px;
+    padding-left: 45px;
+    height: 30px;
+}
+.categories-list .lists{
+    display: grid;
+    padding-left: 35px;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+}
+.categories-list ul{
+    list-style-type: none;
+    padding: 10px 0 10px 10px;
+    margin: 0;
+  
+    
+}
+.categories-list li{
+    padding:10px 10px;
+    color: #aaa;
+    border-radius: 5px;
+    &:hover{
+        color: black;
+        background-color: #fff;
+    }
+}
+
+.en {
+    display: flex;
+    cursor: pointer;
+    height: 38px;
+    padding: 0 5px;
+    align-items: center;
+    position: relative;
+    &:hover{
+        background-color:#aaaaaa2e ;
+        color: white;
+    }
+}
+
+
+.en:hover .en-i{
+    transform: rotate(180deg);
+}
+
+.en-i {
+    font-size: 9px;
+    margin: 5px 5px 7px 5px;
+    transition: .25s;
+}
+.en:hover .language-lists{
+    visibility: visible;
+    opacity: 100%;
+
+}
+
+.language-lists{
+    width: 720px;
+    display: flex;
+    position: absolute;
+    top: 90%;
+    right: -64px;
+    justify-content: center;
+    background-color: var(--amazon-nav-black);
+    padding: 10px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius:10px ;
+    box-shadow: -1px 1px 8px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: .15s;
+    transition-timing-function: ease;
+}
+.language-lists ul{
+    flex: 1;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    padding-bottom: 0;
+    color: #aaa;
+
+}
+.language-lists ul li{
+   padding: 10px 10px;
+   border-radius: 10px;
+   &:hover{
+    background-color: white;
+    color: black;
+   }
+}
+
+.search-icon {
+    font-size: 25px;
+
+
+}
+
+.admin-logo {
+    position: relative;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #44657f;
+}
+.admin-logo img{
+    width: 30px;
+}
+.admin-logo:hover .user-list{
+    visibility: visible;
+    opacity: 100%;
+
+}
+.user-list{
+    position: absolute;
+    background-color: var(--amazon-nav-black);
+    padding: 10px;
+    top: 100%;
+    right: -11px;
+    box-shadow: -1px 1px 10px black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s;
+    transition-timing-function: ease;
+    box-shadow: -1px 1px 5px black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+.user-list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+
+}
+.user-list ul li{
+    padding: 10px 50px 10px 5px  ;
+    white-space: nowrap;
+    &:hover{
+        background-color: #fff;
+        color: black;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

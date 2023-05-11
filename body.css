@@ -1,0 +1,213 @@
+/*------------------------------------------------------------main-body-section--------------------------------------------*/
+.movie-banner-1 {
+    height: 500px;
+    background-image: url(images/amazon-new.jpg);
+    background-size: auto 580px;
+    color: #ffff;
+    font-family: "Amazon ember thin";
+}
+.title{
+    height: 380px;
+    width:560px ;
+    padding: 64px;
+}
+
+.title h1 {
+    font-size: 2.8rem;
+    
+}
+
+.title h4 {
+   font-size: 21px;
+    margin-bottom: 20px;
+}
+.title > button{
+    width: 270px;
+    height: 55px;
+    color: #ffff;
+    font-size: 17px;
+    background-color: #0f79af;
+    border-radius: 3px;
+    border: none;
+    
+}
+.movie-banner-2 {
+    height: 480px;
+    background-image: url(images/amazon-1.jpg);
+    background-size: auto 600px;
+    color: #ffff;
+    font-family: "Amazon ember thin";
+    
+}
+
+.movie-banner-2 .title{
+    padding-right: 60px;
+    padding-left: 55%;
+}
+.movie-banner-2 h1{
+    font-weight: 700;
+    margin-top: 0;
+    
+}
+
+.movie-banner-2 button{
+    margin-top: 20px;
+}
+.grid-list{
+    min-height: 550px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 63px;
+    
+
+}
+@media (max-width:700px) {
+    .grid-list{
+        display: block;
+    }
+    .grid-list-right{
+        justify-items: center;
+    }
+}
+
+.grid-list-left{
+    flex: 1;
+    font-family: "Amazon ember thin";
+   
+}
+.grid-list-left h1{
+    font-size: 2.8rem;
+    margin-right: 50px;
+}
+.grid-list-left h4{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: black;
+    font-family: "Amazon ember light";
+    margin-right: 50px;
+    
+
+}
+
+.grid-list-right{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+@media (max-width:1000px) and (min-width:700px) {
+    .grid-list-right{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:700px)  {
+    .grid-list-right{
+        grid-template-columns: 1fr;
+    }
+}
+.grid{
+    width: 180px;
+    height: 140px;
+    transition: 0.15s;
+    transition-timing-function: ease;
+    background-size:100% 140px;
+    background-repeat: no-repeat;
+
+    &:hover{
+        box-shadow: 0 0 10px 3px black;
+    }
+    
+}
+#grid-1{
+    background-image: url(images/grid-1.jpg);
+    
+    
+}
+#grid-2{
+    background-image: url(images/grid-2.jpg);
+
+}
+#grid-3{
+    background-image: url(images/grid-3.jpg);
+   
+}
+#grid-4{
+    background-image: url(images/grid-4.jpg);
+   
+}
+#grid-5{
+    background-image: url(images/grid-5.jpg);
+   
+}
+#grid-6{
+    background-image: url(images/grid-6.png);
+}
+#grid-7{
+    background-image: url(images/grid-7.png);
+}
+#grid-8{
+    background-image: url(images/grid-8.jpg);
+   
+}
+#grid-9{
+    background-image: url(images/grid-9.jpg);
+    
+}
+#grid-10{
+    background-image: url(images/grid-10.png);
+}
+#grid-11{
+    background-image: url(images/grid-11.png);
+    
+}
+#grid-12{
+    background-image: url(images/grid-12.png);
+   
+}
+
+.amazon-stick-banner{
+     height: 480px;
+    background-image: url(images/amazon-3.jpg);
+    background-size: auto 600px;
+    color: #ffff;
+    
+}
+.amazon-stick-banner .title{
+    margin-left: auto;
+}
+.amazon-stick-banner .title h1{
+    margin: 0;
+    font-size: 2.5rem;
+    margin-left: 50px;
+    font-family: "Amazon ember light";
+}
+.amazon-stick-banner .title h4{
+    font-family: "Amazon ember thin";
+    margin-left: 50px;
+}
+.amazon-stick-banner button{
+    margin: 12px 50px;
+}
+.cartoon-banner{
+      height: 480px;
+    background-image: url(images/amazon-4.jpg);
+    background-size:auto 600px;
+    color: #ffff;
+}
+.cartoon-banner .title{
+    padding-bottom: 0;
+}
+.cartoon-banner h1{
+    font-family: "Amazon ember light";
+    font-size: 2.5rem;
+}
+.cartoon-banner h4{
+    font-family: "Amazon ember thin";
+    margin-top: 0;
+    margin-right: 50px;
+    font-size: 21px;
+}
+.cartoon-banner button{
+    margin-top: 20px;
+}
