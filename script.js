@@ -8,7 +8,7 @@ window.addEventListener('scroll',()=>{
     if(currentScroll > lastScroll){
         navBar.style.display = 'none'
     }else{
-        navBar.style.display = 'unset'
+        navBar.style.display = 'flex'
     }
 
     lastScroll = currentScroll;
